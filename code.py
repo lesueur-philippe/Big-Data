@@ -1,5 +1,6 @@
 def fonction_1():
-	return 0
+	return 1+1
 	
-def fontion_2():
-	return 0
+def fonction_2():
+	return 2+2
+
