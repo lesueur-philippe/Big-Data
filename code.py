@@ -1,5 +1,5 @@
 def fonction_1():
-	pass
+	return 1+1
 	
 def fontion_2():
-	pass
+	return 2+2
