@@ -1,0 +1,18 @@
+Package requirements :
+- ~$ pip3 install pandas
+- ~$ pip3 install scikit-learn
+- ~$ pip3 install flask
+
+Testing :  
+- aller dans le dossier "tests" (~$ cd Lesueur_Philippe_train_master_rendu/tests)
+- ~$ python3 -m unittest -v Train_master_learning_test.py
+
+API :
+- aller dans le dossier "main" (~$ cd Lesueur_Philippe_train_master_rendu/main)
+- ~$ source venv/bin/activate
+- ~$ python3 API.py
+- regarder l'adresse locale sur l'invite de commande et garder la connection active (Running on http://127.0.0.1:5000/)
+- ouvrir un autre terminal sur lequel vous entrerez la commande suivante
+  ~$  curl -d votre_dictionnaire -X POST  votre_adresse/predict
+  exemple : curl -d '{ "review" : "xxx", "title" : "yyy", "stars" : "3" }' -X POST  http://127.0.0.1:5000/predict
+=> la prediction et le score s'afficheront sur cette même invite de commande.
